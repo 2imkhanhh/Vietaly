@@ -588,8 +588,8 @@ body {
 }
 
 .carousel-nav-btn:hover {
-    background: #E5D1B8;
-    transform: scale(1.05);
+    background: #C2893B;
+    color: #FFFFFF;
 }
 
 .showcase-track-container {
@@ -767,4 +767,163 @@ body {
     width: 24px;
     border-radius: 4px;
     background: #C2893B;
+}
+
+/* Category Section */
+.category-section {
+    background-color: #F6E7C6;
+    padding: 20px 0 80px;
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Calistoga', serif;
+    font-size: clamp(28px, 4vw, 42px);
+    color: #C2893B;
+    margin-bottom: 50px;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    gap: clamp(20px, 5vw, 80px);
+    flex-wrap: wrap;
+}
+
+.category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.category-item:hover {
+    transform: translateY(-5px);
+}
+
+.cat-img-wrap {
+    width: clamp(80px, 10vw, 120px);
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cat-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.category-item p {
+    font-family: var(--font-mona-sans);
+    font-weight: 600;
+    font-size: 14px;
+    color: #C2893B;
+    margin: 0;
+}
+
+/* Split Banner Section */
+.split-banner-section {
+    display: flex;
+    width: 100%;
+    height: clamp(400px, 60vw, 700px);
+}
+
+@media (max-width: 768px) {
+    .split-banner-section {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+.split-left,
+.split-right {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+
+    .split-left,
+    .split-right {
+        height: 400px;
+    }
+}
+
+.split-left img,
+.split-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.new-arrival-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    height: 320px;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.new-title {
+    font-family: 'Calistoga', serif;
+    font-size: 32px;
+    color: #C2893B;
+    margin-bottom: 10px;
+}
+
+.new-product-name {
+    font-family: var(--font-mona-sans);
+    font-weight: 700;
+    font-size: 15px;
+    color: #C2893B;
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+.new-price {
+    font-family: var(--font-mona-sans);
+    font-weight: 600;
+    font-size: 13px;
+    color: #C2893B;
+    margin-bottom: 25px;
+}
+
+.btn-shop-now {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #F6E7C6;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-mona-sans);
+    font-weight: 700;
+    font-size: 13px;
+    color: #C2893B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-shop-now:hover {
+    background-color: #C2893B;
+    color: #FFFFFF;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(194, 137, 59, 0.3);
 }

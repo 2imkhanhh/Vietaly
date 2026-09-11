@@ -377,6 +377,62 @@
         </div>
     </section>
 
+    <!-- Category Section -->
+    <section class="category-section">
+        <div class="custom-container">
+            <h2 class="section-title">Danh mục sản phẩm</h2>
+            <div class="category-list">
+                <a href="#" class="category-item">
+                    <div class="cat-img-wrap">
+                        <img src="{{ asset('images/category1.png') }}" alt="Nama chocolate">
+                    </div>
+                    <p>Nama chocolate</p>
+                </a>
+                <a href="#" class="category-item">
+                    <div class="cat-img-wrap">
+                        <img src="{{ asset('images/category2.png') }}" alt="Nama chocolate">
+                    </div>
+                    <p>Nama chocolate</p>
+                </a>
+                <a href="#" class="category-item">
+                    <div class="cat-img-wrap">
+                        <img src="{{ asset('images/category3.png') }}" alt="Nama chocolate">
+                    </div>
+                    <p>Nama chocolate</p>
+                </a>
+                <a href="#" class="category-item">
+                    <div class="cat-img-wrap">
+                        <img src="{{ asset('images/category1.png') }}" alt="Nama chocolate">
+                    </div>
+                    <p>Nama chocolate</p>
+                </a>
+                <a href="#" class="category-item">
+                    <div class="cat-img-wrap">
+                        <img src="{{ asset('images/category2.png') }}" alt="Nama chocolate">
+                    </div>
+                    <p>Nama chocolate</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Split Banner Section -->
+    <section class="split-banner-section">
+        <div class="split-left">
+            <img src="{{ asset('images/banner3.jpg') }}" alt="Process">
+        </div>
+        <div class="split-right">
+            <img src="{{ asset('images/banner4.jpg') }}" alt="New Arrivals">
+            
+            <div class="new-arrival-card" style="background-image: url('{{ asset('images/card.png') }}');">
+                <h2 class="new-title">Mới về</h2>
+                <h3 class="new-product-name">Socola Đen Nguyên Bản 72%</h3>
+                <p class="new-price">890.000 VND</p>
+                <button class="btn-shop-now">Shop now</button>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
