@@ -779,6 +779,7 @@ body {
 
 .section-title {
     font-family: 'Calistoga', serif;
+    font-weight: 400;
     font-size: clamp(28px, 4vw, 42px);
     color: #C2893B;
     margin-bottom: 50px;
@@ -883,6 +884,7 @@ body {
 
 .new-title {
     font-family: 'Calistoga', serif;
+    font-weight: 400;
     font-size: 32px;
     color: #C2893B;
     margin-bottom: 10px;
