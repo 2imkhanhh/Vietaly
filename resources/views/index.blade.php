@@ -18,7 +18,6 @@
 </head>
 
 <body>
-
     <header class="header-wrapper">
         <!-- TOP BAR -->
         <div class="top-bar">
@@ -34,16 +33,13 @@
         <!-- MAIN HEADER -->
         <div class="main-header">
             <div class="custom-container main-header-container">
-                <!-- Left Menu -->
                 <nav class="nav-menu">
                     <a href="#">Giới thiệu</a>
                     <div class="nav-item">
                         <span>Sản phẩm</span>
                         <span class="material-symbols-outlined">keyboard_arrow_down</span>
-                        <!-- MEGA MENU -->
                         <div class="mega-menu">
                             <div class="mega-menu-inner">
-                                <!-- Cột Danh mục -->
                                 <div class="mega-categories">
                                     <h3>Danh mục</h3>
                                     <ul>
@@ -58,7 +54,6 @@
                                     </ul>
                                 </div>
 
-                                <!-- Cột Sản phẩm nổi bật -->
                                 <div class="mega-products">
                                     <div class="mega-products-header">
                                         <h3>Sản phẩm nổi bật</h3>
@@ -66,7 +61,6 @@
                                                 class="material-symbols-outlined">arrow_right_alt</span></a>
                                     </div>
 
-                                    <!-- Nhóm: Artisan (3 sản phẩm) -->
                                     <div class="mega-product-group active" id="cat-artisan">
                                         <div class="mega-product-card">
                                             <img src="/images/product1.png" alt="Artisan 1">
@@ -85,7 +79,6 @@
                                         </div>
                                     </div>
 
-                                    <!-- Nhóm: Bars (2 sản phẩm - Ít hơn) -->
                                     <div class="mega-product-group" id="cat-bars">
                                         <div class="mega-product-card">
                                             <img src="/images/product1.png" alt="Bar 1">
@@ -99,7 +92,6 @@
                                         </div>
                                     </div>
 
-                                    <!-- Nhóm: Truffles (4 sản phẩm - Vượt số lượng 3) -->
                                     <div class="mega-product-group" id="cat-truffles">
                                         <div class="mega-product-card">
                                             <img src="/images/product1.png" alt="Truffle 1">
@@ -122,7 +114,6 @@
                                             <p class="price">290.000đ</p>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -184,7 +175,6 @@
     <!-- Product Showcase Section -->
     <section class="product-showcase">
         <div class="custom-container showcase-container">
-            <!-- Tabs -->
             <div class="showcase-tabs">
                 <button class="tab-btn active">Bán chạy</button>
                 <button class="tab-btn">Mới về</button>
@@ -197,10 +187,9 @@
                 <button class="carousel-nav-btn showcase-prev">
                     <span class="material-symbols-outlined" style="transform: scaleX(-1);">arrow_right_alt</span>
                 </button>
-                
+
                 <div class="showcase-track-container">
                     <div class="showcase-track">
-                        <!-- Product 1 -->
                         <div class="product-card group">
                             <div class="product-image-wrap">
                                 <img src="{{ asset('images/product1.png') }}" alt="Product 1" class="main-img">
@@ -220,7 +209,6 @@
                             </div>
                         </div>
 
-                        <!-- Product 2 -->
                         <div class="product-card group">
                             <div class="product-image-wrap">
                                 <img src="{{ asset('images/product2.png') }}" alt="Product 2" class="main-img">
@@ -240,7 +228,6 @@
                             </div>
                         </div>
 
-                        <!-- Product 3 -->
                         <div class="product-card group">
                             <div class="product-image-wrap">
                                 <img src="{{ asset('images/product3.png') }}" alt="Product 3" class="main-img">
@@ -260,7 +247,6 @@
                             </div>
                         </div>
 
-                        <!-- Product 4 -->
                         <div class="product-card group">
                             <div class="product-image-wrap">
                                 <img src="{{ asset('images/product4.png') }}" alt="Product 4" class="main-img">
@@ -280,7 +266,6 @@
                             </div>
                         </div>
 
-                        <!-- Product 5 (Clone 1) -->
                         <div class="product-card group">
                             <div class="product-image-wrap">
                                 <img src="{{ asset('images/product1.png') }}" alt="Product 1" class="main-img">
@@ -300,7 +285,6 @@
                             </div>
                         </div>
 
-                        <!-- Product 6 (Clone 2) -->
                         <div class="product-card group">
                             <div class="product-image-wrap">
                                 <img src="{{ asset('images/product2.png') }}" alt="Product 2" class="main-img">
@@ -320,7 +304,6 @@
                             </div>
                         </div>
 
-                        <!-- Product 7 (Clone 3) -->
                         <div class="product-card group">
                             <div class="product-image-wrap">
                                 <img src="{{ asset('images/product3.png') }}" alt="Product 3" class="main-img">
@@ -340,7 +323,6 @@
                             </div>
                         </div>
 
-                        <!-- Product 8 (Clone 4) -->
                         <div class="product-card group">
                             <div class="product-image-wrap">
                                 <img src="{{ asset('images/product4.png') }}" alt="Product 4" class="main-img">
@@ -423,7 +405,7 @@
         </div>
         <div class="split-right">
             <img src="{{ asset('images/banner4.jpg') }}" alt="New Arrivals">
-            
+
             <div class="new-arrival-card" style="background-image: url('{{ asset('images/card.png') }}');">
                 <h2 class="new-title">Mới về</h2>
                 <h3 class="new-product-name">Socola Đen Nguyên Bản 72%</h3>
@@ -437,21 +419,24 @@
     <section class="who-we-are-section">
         <div class="custom-container who-we-are-container">
             <div class="who-we-are-left">
-                <!-- Using .jpg or .png depending on what user added, typically it's weare.jpg or weare.png. Let's use weare.png -->
-                <img src="{{ asset('images/weare.png') }}" alt="Chúng tôi là ai" onerror="this.src='{{ asset('images/weare.jpg') }}'">
+                <img src="{{ asset('images/weare.jpg') }}" alt="Chúng tôi là ai">
             </div>
             <div class="who-we-are-right">
                 <h2 class="section-title text-left">Chúng tôi là ai?</h2>
-                
+
                 <div class="who-text-content">
-                    <p>Chúng Tôi Tin Rằng Socola Không Chỉ Là Một Món Ăn, Mà Là Một Trải Nghiệm Cảm Xúc. Từ Việc Tuyển Chọn Hạt Cacao Chất Lượng, Đến Từng Công Đoạn Chế Biến Tỉ Mỉ, Mỗi Sản Phẩm Đều Được Tạo Ra Với Sự Chăm Chút Và Đam Mê.</p>
-                    <p>Với Mong Muốn Mang Đến Những Hương Vị Tinh Tế Và Khác Biệt, Chúng Tôi Không Ngừng Thử Nghiệm, Sáng Tạo Để Mỗi Thanh Socola Đều Kể Một Câu Chuyện Riêng – Nhẹ Nhàng, Sâu Lắng Nhưng Đầy Cuốn Hút.</p>
+                    <p>Chúng Tôi Tin Rằng Socola Không Chỉ Là Một Món Ăn, Mà Là Một Trải Nghiệm Cảm Xúc. Từ Việc Tuyển
+                        Chọn Hạt Cacao Chất Lượng, Đến Từng Công Đoạn Chế Biến Tỉ Mỉ, Mỗi Sản Phẩm Đều Được Tạo Ra Với
+                        Sự Chăm Chút Và Đam Mê.</p>
+                    <p>Với Mong Muốn Mang Đến Những Hương Vị Tinh Tế Và Khác Biệt, Chúng Tôi Không Ngừng Thử Nghiệm,
+                        Sáng Tạo Để Mỗi Thanh Socola Đều Kể Một Câu Chuyện Riêng – Nhẹ Nhàng, Sâu Lắng Nhưng Đầy Cuốn
+                        Hút.</p>
                 </div>
-                <a href="#" class="view-more-link">Xem thêm <span class="material-symbols-outlined">arrow_right_alt</span></a>
+                <a href="#" class="view-more-link">Xem thêm <span
+                        class="material-symbols-outlined">arrow_right_alt</span></a>
             </div>
         </div>
     </section>
-
 </body>
 
 </html>
