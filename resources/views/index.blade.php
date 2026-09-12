@@ -433,6 +433,25 @@
         </div>
     </section>
 
+    <!-- Who We Are Section -->
+    <section class="who-we-are-section">
+        <div class="custom-container who-we-are-container">
+            <div class="who-we-are-left">
+                <!-- Using .jpg or .png depending on what user added, typically it's weare.jpg or weare.png. Let's use weare.png -->
+                <img src="{{ asset('images/weare.png') }}" alt="Chúng tôi là ai" onerror="this.src='{{ asset('images/weare.jpg') }}'">
+            </div>
+            <div class="who-we-are-right">
+                <h2 class="section-title text-left">Chúng tôi là ai?</h2>
+                
+                <div class="who-text-content">
+                    <p>Chúng Tôi Tin Rằng Socola Không Chỉ Là Một Món Ăn, Mà Là Một Trải Nghiệm Cảm Xúc. Từ Việc Tuyển Chọn Hạt Cacao Chất Lượng, Đến Từng Công Đoạn Chế Biến Tỉ Mỉ, Mỗi Sản Phẩm Đều Được Tạo Ra Với Sự Chăm Chút Và Đam Mê.</p>
+                    <p>Với Mong Muốn Mang Đến Những Hương Vị Tinh Tế Và Khác Biệt, Chúng Tôi Không Ngừng Thử Nghiệm, Sáng Tạo Để Mỗi Thanh Socola Đều Kể Một Câu Chuyện Riêng – Nhẹ Nhàng, Sâu Lắng Nhưng Đầy Cuốn Hút.</p>
+                </div>
+                <a href="#" class="view-more-link">Xem thêm <span class="material-symbols-outlined">arrow_right_alt</span></a>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
