@@ -101,11 +101,16 @@ body {
     height: 100%;
 }
 
+.header-wrapper .custom-container {
+    padding: 0 clamp(20px, 7vw, 170px) !important;
+}
+
 .nav-menu {
     display: flex;
     align-items: center;
     gap: 16px;
     position: relative;
+    z-index: 30;
 }
 
 .magic-line {
@@ -179,7 +184,9 @@ body {
 .header-actions {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 24px;
+    position: relative;
+    z-index: 30;
 }
 
 .search-box {
