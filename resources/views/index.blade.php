@@ -437,6 +437,39 @@
             </div>
         </div>
     </section>
+
+    <!-- Store Section -->
+    <section class="store-section">
+        <div class="custom-container store-container">
+            <div class="store-left">
+                <div class="store-content-wrapper">
+                    <h2 class="store-title">Cửa hàng</h2>
+                    <div class="store-addresses">
+                        <p>P.903, Tầng 9, Tòa Nhà Diamond Plaza, 34 Lê Duẩn, Phường Sài Gòn, Thành Phố Hồ Chí Minh, Việt
+                            Nam</p>
+                        <p>P.903, Tầng 9, Tòa Nhà Diamond Plaza, 34 Lê Duẩn, Phường Sài Gòn, Thành Phố Hồ Chí Minh, Việt
+                            Nam</p>
+                    </div>
+                    <a href="#" class="store-link">Xem thêm <span
+                            class="material-symbols-outlined">arrow_right_alt</span></a>
+                </div>
+            </div>
+            <div class="store-right">
+                <div class="store-images">
+                    <div class="store-img-wrap side-img left-img">
+                        <img src="{{ asset('images/store2.png') }}" alt="Store 2">
+                    </div>
+                    <div class="store-img-wrap center-img">
+                        <img src="{{ asset('images/store1.png') }}" alt="Store 1">
+                    </div>
+                    <div class="store-img-wrap side-img right-img">
+                        <img src="{{ asset('images/store3.png') }}" alt="Store 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>

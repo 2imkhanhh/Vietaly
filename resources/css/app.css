@@ -42,10 +42,7 @@ body {
 
 .custom-container {
     width: 100%;
-    max-width: 1340px;
-    min-width: 1340px;
-    margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 clamp(20px, 6vw, 120px);
     position: relative;
 }
 
@@ -117,7 +114,7 @@ body {
     left: 0;
     width: 0;
     height: 3px;
-    background: linear-gradient(90deg, #DBA760, #C2893B);
+    background: linear-gradient(90deg, #DBA760, var(--color-header-text));
     border-radius: 3px;
     transition: left 0.4s cubic-bezier(0.34, 1.36, 0.64, 1), width 0.3s cubic-bezier(0.34, 1.36, 0.64, 1), opacity 0.3s ease;
     opacity: 0;
@@ -563,7 +560,7 @@ body {
 
 .tab-btn.active,
 .tab-btn:hover {
-    color: #C2893B;
+    color: var(--color-header-text);
 }
 
 .showcase-carousel-wrapper {
@@ -589,7 +586,7 @@ body {
 }
 
 .carousel-nav-btn:hover {
-    background: #C2893B;
+    background: var(--color-header-text);
     color: #FFFFFF;
 }
 
@@ -714,7 +711,7 @@ body {
 
 .btn-detail {
     background: #FCF7E0;
-    color: #C2893B;
+    color: var(--color-header-text);
     font-family: var(--font-mona-sans);
     font-size: 13px;
     font-weight: 600;
@@ -735,7 +732,7 @@ body {
     font-family: var(--font-mona-sans);
     font-size: 15px;
     font-weight: 700;
-    color: #C2893B;
+    color: var(--color-header-text);
     margin: 0;
 }
 
@@ -767,7 +764,7 @@ body {
 .showcase-pagination .dot.active {
     width: 24px;
     border-radius: 4px;
-    background: #C2893B;
+    background: var(--color-header-text);
 }
 
 /* Category Section */
@@ -781,7 +778,7 @@ body {
     font-family: 'Calistoga', serif;
     font-weight: 400;
     font-size: clamp(28px, 4vw, 42px);
-    color: #C2893B;
+    color: var(--color-header-text);
     margin-bottom: 50px;
 }
 
@@ -823,7 +820,7 @@ body {
     font-family: var(--font-mona-sans);
     font-weight: 600;
     font-size: 14px;
-    color: #C2893B;
+    color: var(--color-header-text);
     margin: 0;
 }
 
@@ -886,7 +883,7 @@ body {
     font-family: 'Calistoga', serif;
     font-weight: 400;
     font-size: 32px;
-    color: #C2893B;
+    color: var(--color-header-text);
     margin-bottom: 10px;
 }
 
@@ -894,7 +891,7 @@ body {
     font-family: var(--font-mona-sans);
     font-weight: 700;
     font-size: 15px;
-    color: #C2893B;
+    color: var(--color-header-text);
     margin-bottom: 5px;
     line-height: 1.4;
 }
@@ -903,7 +900,7 @@ body {
     font-family: var(--font-mona-sans);
     font-weight: 600;
     font-size: 13px;
-    color: #C2893B;
+    color: var(--color-header-text);
     margin-bottom: 25px;
 }
 
@@ -917,7 +914,7 @@ body {
     font-family: var(--font-mona-sans);
     font-weight: 700;
     font-size: 13px;
-    color: #C2893B;
+    color: var(--color-header-text);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -925,7 +922,7 @@ body {
 }
 
 .btn-shop-now:hover {
-    background-color: #C2893B;
+    background-color: var(--color-header-text);
     color: #FFFFFF;
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(194, 137, 59, 0.3);
@@ -944,6 +941,8 @@ body {
 
 .who-we-are-left {
     flex: 1;
+    width: 50%;
+    max-width: 50%;
     display: flex;
     justify-content: center;
 }
@@ -958,6 +957,8 @@ body {
 
 .who-we-are-right {
     flex: 1;
+    width: 50%;
+    max-width: 50%;
     position: relative;
     padding-right: 50px;
 }
@@ -993,7 +994,7 @@ body {
     font-family: var(--font-mona-sans);
     font-size: 16px;
     line-height: 1.6;
-    color: #B28F60;
+    color: var(--color-header-text);
     margin-bottom: 15px;
 }
 
@@ -1005,7 +1006,7 @@ body {
     font-family: var(--font-mona-sans);
     font-size: 16px;
     font-weight: 600;
-    color: #C2893B;
+    color: var(--color-header-text);
     text-decoration: none;
     display: inline-flex;
     align-items: center;
@@ -1029,5 +1030,132 @@ body {
 
     .who-avatar {
         top: -60px;
+    }
+}
+
+/* Store Section */
+.store-section {
+    background-color: var(--color-topbar-bg);
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+.store-container {
+    display: flex;
+    align-items: center;
+    gap: clamp(40px, 8vw, 80px);
+}
+
+.store-left {
+    flex: 1;
+    width: 50%;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.store-content-wrapper {
+    width: 100%;
+    max-width: 450px;
+}
+
+.store-title {
+    font-family: 'Calistoga', serif;
+    font-weight: 400;
+    font-size: clamp(32px, 4vw, 56px);
+    color: #E0B06A;
+    margin-bottom: 40px;
+}
+
+.store-addresses {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.store-addresses p {
+    font-family: var(--font-mona-sans);
+    font-size: 16px;
+    line-height: 1.6;
+    color: #E0B06A;
+}
+
+.store-link {
+    font-family: var(--font-mona-sans);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-topbar-text);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.store-link:hover {
+    color: #A26A28;
+    transform: translateX(5px);
+}
+
+.store-right {
+    flex: 1;
+    width: 50%;
+    max-width: 50%;
+    position: relative;
+}
+
+.store-images {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    height: 450px;
+    width: 100%;
+}
+
+.store-img-wrap {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.center-img {
+    flex: 0 0 50%;
+    z-index: 2;
+}
+
+.side-img {
+    flex: 0 0 22%;
+    z-index: 1;
+}
+
+.store-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.side-img::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(ellipse at center, transparent 30%, rgba(252, 247, 224, 0.4) 100%);
+    box-shadow: inset 0 0 20px rgba(252, 247, 224, 0.6);
+}
+
+@media (max-width: 992px) {
+    .store-container {
+        flex-direction: column;
+    }
+
+    .store-left {
+        flex: 1;
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .store-images {
+        height: 350px;
     }
 }
