@@ -545,6 +545,35 @@
             <img src="{{ asset('images/background.svg') }}" alt="Background Pattern">
         </div>
     </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="custom-container team-container">
+            <div class="team-left">
+                <img src="{{ asset('images/team.jpg') }}" alt="Team">
+            </div>
+            <div class="team-right">
+                <h2 class="team-title">Mời vào đội</h2>
+                <div class="team-positions">
+                    <div class="team-position">
+                        <h3>Nhân viên bán hàng (Sales Associate)</h3>
+                        <p>Tư vấn sản phẩm, hỗ trợ khách hàng tại cửa hàng và đảm bảo trải nghiệm mua sắm tốt nhất.</p>
+                    </div>
+                    <div class="team-position">
+                        <h3>Nhân viên vận hành đơn hàng (Order Fulfillment Staff)</h3>
+                        <p>Xử lý đơn hàng, đóng gói sản phẩm và phối hợp giao vận nhanh chóng, chính xác.</p>
+                    </div>
+                    <div class="team-position">
+                        <h3>Nhân viên Marketing (Marketing Executive)</h3>
+                        <p>Lên ý tưởng nội dung, quản lý mạng xã hội và triển khai các chiến dịch quảng bá thương hiệu.</p>
+                    </div>
+                </div>
+                <a href="#" class="btn-apply-circle">
+                    <span>Ứng tuyển<br>ngay</span>
+                </a>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
