@@ -574,6 +574,63 @@
             </div>
         </div>
     </section>
+
+    <!-- Instagram Section -->
+    <section class="instagram-section">
+        <div class="custom-container instagram-container">
+            <div class="instagram-images">
+                <div class="insta-img-wrap"><img src="{{ asset('images/footer1.jpg') }}" alt="Instagram 1"></div>
+                <div class="insta-img-wrap"><img src="{{ asset('images/banner4.jpg') }}" alt="Instagram 2"></div>
+                <div class="insta-img-wrap"><img src="{{ asset('images/weare.jpg') }}" alt="Instagram 3"></div>
+            </div>
+            <div class="instagram-text">
+                <h2>Theo Dõi Chúng Tôi<br>Trên Instagram</h2>
+                <a href="#" class="insta-link">@LA'VIETALY <span class="material-symbols-outlined">call_made</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="custom-container">
+            <img src="{{ asset('images/logo footer.svg') }}" alt="LA' VIETALY Logo" class="footer-huge-logo">
+            <div class="footer-grid">
+                <div class="footer-col footer-col-brand">
+                    <h3>LA'VIETALY</h3>
+                    <p>Địa chỉ: P.903, Tầng 9, Tòa nhà Diamond Plaza, 34 Lê Duẩn, Phường Sài Gòn, Thành phố Hồ Chí Minh, Việt Nam</p>
+                    <p>Email: anh.le@lavietaly.com<br>Số điện thoại: 0971773868</p>
+                </div>
+                <div class="footer-col">
+                    <h3>ABOUT US</h3>
+                    <ul>
+                        <li><a href="#">Về chúng tôi</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>SẢN PHẨM</h3>
+                    <ul>
+                        <li><a href="#">Chocolate</a></li>
+                        <li><a href="#">Chocolate & nuts</a></li>
+                        <li><a href="#">Chocolate cake</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>OTHER</h3>
+                    <ul>
+                        <li><a href="#">Term & Privacy</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Store</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-col-badges">
+                    <img src="{{ asset('images/register.svg') }}" alt="Đã đăng ký Bộ Công Thương" class="bct-logo">
+                    <img src="{{ asset('images/noti.svg') }}" alt="Đã thông báo Bộ Công Thương" class="bct-logo">
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
