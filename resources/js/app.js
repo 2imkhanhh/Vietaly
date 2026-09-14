@@ -173,3 +173,73 @@ if (showcaseTrack && showcaseNext && showcasePrev) {
         });
     });
 }
+
+// Review Slider Logic
+const reviewTrack = document.querySelector('.review-track');
+const reviewNext = document.querySelector('.review-next');
+const reviewPrev = document.querySelector('.review-prev');
+const reviewDots = document.querySelectorAll('.review-pagination .dot');
+
+if (reviewTrack && reviewNext && reviewPrev) {
+    let reviewTransitioning = false;
+    let reviewCurrentIndex = 0;
+    const reviewTotalDots = reviewDots.length;
+
+    function updateReviewDots() {
+        if (reviewTotalDots > 0) {
+            reviewDots.forEach(dot => dot.classList.remove('active'));
+            let activeIndex = ((reviewCurrentIndex % reviewTotalDots) + reviewTotalDots) % reviewTotalDots;
+            if (reviewDots[activeIndex]) {
+                reviewDots[activeIndex].classList.add('active');
+            }
+        }
+    }
+
+    reviewNext.addEventListener('click', () => {
+        if (reviewTransitioning) return;
+        reviewTransitioning = true;
+        
+        reviewCurrentIndex++;
+        updateReviewDots();
+        
+        const card = reviewTrack.firstElementChild;
+        const cardWidth = card.offsetWidth;
+
+        reviewTrack.style.transition = 'transform 0.5s ease-in-out';
+        reviewTrack.style.transform = `translateX(-${cardWidth}px)`;
+        
+        reviewTrack.addEventListener('transitionend', function handler() {
+            reviewTrack.removeEventListener('transitionend', handler);
+            reviewTrack.style.transition = 'none';
+            reviewTrack.appendChild(reviewTrack.firstElementChild);
+            reviewTrack.style.transform = 'translateX(0)';
+            reviewTransitioning = false;
+        });
+    });
+
+    reviewPrev.addEventListener('click', () => {
+        if (reviewTransitioning) return;
+        reviewTransitioning = true;
+        
+        reviewCurrentIndex--;
+        updateReviewDots();
+        
+        const card = reviewTrack.lastElementChild;
+        const cardWidth = card.offsetWidth;
+
+        reviewTrack.prepend(reviewTrack.lastElementChild);
+        reviewTrack.style.transition = 'none';
+        reviewTrack.style.transform = `translateX(-${cardWidth}px)`;
+        
+        // Trigger layout
+        reviewTrack.offsetHeight;
+        
+        reviewTrack.style.transition = 'transform 0.5s ease-in-out';
+        reviewTrack.style.transform = 'translateX(0)';
+        
+        reviewTrack.addEventListener('transitionend', function handler() {
+            reviewTrack.removeEventListener('transitionend', handler);
+            reviewTransitioning = false;
+        });
+    });
+}

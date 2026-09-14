@@ -470,6 +470,81 @@
         </div>
     </section>
 
+    <!-- Review Section -->
+    <section class="review-section">
+        <div class="custom-container review-container">
+            <button class="review-nav-btn review-prev">
+                <span class="material-symbols-outlined">arrow_left_alt</span>
+            </button>
+
+            <div class="review-track-container">
+                <div class="review-track">
+                    <!-- Review 1 -->
+                    <div class="review-card">
+                        <div class="review-card-left">
+                            <span class="review-subtitle">KHÁCH HÀNG NÓI GÌ VỀ CHÚNG TÔI</span>
+                            <p class="review-quote">“Mình không phải kiểu người mê socola lắm, nhưng thử bên này xong
+                                là bị ghiền luôn. Vị không quá ngọt, ăn rất mượt và có chiều sâu chứ không bị gắt như
+                                mấy loại thông thường. Đặc biệt là dòng caramel muối biển, ăn xong vẫn còn dư vị rất dễ
+                                chịu. Đóng gói cũng xịn xò, nhận hàng thấy khá chỉn chu. Chắc chắn sẽ mua lại và thử
+                                thêm mấy vị khác.”</p>
+                            <span class="review-author">Sarah L.</span>
+
+                            <div class="review-product">
+                                <img src="{{ asset('images/product1.png') }}" alt="Product"
+                                    class="review-product-img">
+                                <div class="review-product-info">
+                                    <span class="review-product-title">Socola Đen Nguyên Bản 72%</span>
+                                    <span class="review-product-price">890.000 VND</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-card-right">
+                            <img src="{{ asset('images/review.png') }}" alt="Review">
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="review-card">
+                        <div class="review-card-left">
+                            <span class="review-subtitle">KHÁCH HÀNG NÓI GÌ VỀ CHÚNG TÔI</span>
+                            <p class="review-quote">“Socola ở đây thật sự rất khác biệt, mỗi thanh đều mang lại cảm
+                                giác chân thật về nguyên liệu chất lượng cao. Từ cách đóng gói tỉ mỉ đến hương vị tuyệt
+                                vời, Vietaly thực sự làm mình ấn tượng. Mình sẽ còn ủng hộ dài dài!”</p>
+                            <span class="review-author">Tony T.</span>
+
+                            <div class="review-product">
+                                <img src="{{ asset('images/product2.png') }}" alt="Product"
+                                    class="review-product-img">
+                                <div class="review-product-info">
+                                    <span class="review-product-title">Socola Hạt Dẻ Cười 65%</span>
+                                    <span class="review-product-price">950.000 VND</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-card-right">
+                            <img src="{{ asset('images/banner2.jpg') }}" alt="Review 2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="review-nav-btn review-next">
+                <span class="material-symbols-outlined">arrow_right_alt</span>
+            </button>
+        </div>
+
+        <div class="review-pagination">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <div class="review-bottom-bg">
+            <img src="{{ asset('images/background.svg') }}" alt="Background Pattern">
+        </div>
+    </section>
 </body>
 
 </html>
