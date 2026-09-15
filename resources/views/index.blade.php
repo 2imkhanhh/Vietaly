@@ -33,7 +33,16 @@
         <!-- MAIN HEADER -->
         <div class="main-header">
             <div class="custom-container main-header-container">
-                <nav class="nav-menu">
+                <button id="mobile-menu-toggle" class="mobile-menu-btn">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+                <nav class="nav-menu" id="nav-menu">
+                    <div class="mobile-menu-close">
+                        <button id="mobile-menu-close-btn" class="mobile-menu-btn">
+                            <span class="material-symbols-outlined">close</span>
+                        </button>
+                    </div>
                     <a href="#">Giới thiệu</a>
                     <div class="nav-item">
                         <span>Sản phẩm</span>
@@ -631,6 +640,37 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('mobile-menu-toggle');
+            const menuClose = document.getElementById('mobile-menu-close-btn');
+            const navMenu = document.getElementById('nav-menu');
+            const overlay = document.getElementById('mobile-menu-overlay');
+
+            function toggleMenu() {
+                navMenu.classList.toggle('active');
+                overlay.classList.toggle('active');
+                document.body.classList.toggle('no-scroll');
+            }
+
+            if (menuToggle && menuClose && navMenu && overlay) {
+                menuToggle.addEventListener('click', toggleMenu);
+                menuClose.addEventListener('click', toggleMenu);
+                overlay.addEventListener('click', toggleMenu);
+            }
+
+            // Handle mobile mega menu click
+            const navItems = document.querySelectorAll('.nav-item');
+            navItems.forEach(item => {
+                item.addEventListener('click', function(e) {
+                    if (window.innerWidth <= 1024) {
+                        this.classList.toggle('open');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
