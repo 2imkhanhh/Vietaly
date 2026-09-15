@@ -5,6 +5,32 @@ const magicLine = document.querySelector('.magic-line');
 const navItems = document.querySelectorAll('.nav-menu > a, .nav-menu > .nav-item');
 
 if (navMenu && magicLine && navItems.length > 0) {
+    const currentPath = window.location.pathname;
+    let activeItem = null;
+    
+    if (currentPath !== '/') {
+        navItems.forEach(item => {
+            if (item.tagName.toLowerCase() === 'a' && item.getAttribute('href') === currentPath) {
+                activeItem = item;
+                item.classList.add('active-nav');
+            }
+        });
+    }
+
+    function resetMagicLine() {
+        if (activeItem) {
+            const { offsetLeft, offsetWidth } = activeItem;
+            magicLine.style.left = `${offsetLeft}px`;
+            magicLine.style.width = `${offsetWidth}px`;
+            magicLine.style.opacity = '1';
+        } else {
+            magicLine.style.opacity = '0';
+        }
+    }
+
+    setTimeout(resetMagicLine, 100);
+    window.addEventListener('resize', resetMagicLine);
+
     navItems.forEach(item => {
         item.addEventListener('mouseenter', (e) => {
             const { offsetLeft, offsetWidth } = e.currentTarget;
@@ -14,9 +40,7 @@ if (navMenu && magicLine && navItems.length > 0) {
         });
     });
 
-    navMenu.addEventListener('mouseleave', () => {
-        magicLine.style.opacity = '0';
-    });
+    navMenu.addEventListener('mouseleave', resetMagicLine);
 }
 
 // Mega Menu Hover Logic
