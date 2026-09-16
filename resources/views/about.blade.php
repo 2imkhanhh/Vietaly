@@ -89,6 +89,29 @@
         </div>
     </section>
 
+    <!-- Founder Section -->
+    <section class="founder-section">
+        <div class="custom-container">
+            <div class="founder-stamp">
+                <h2 class="founder-title">Nhắn nhủ từ nhà sáng lập</h2>
+                <div class="founder-message">
+                    <p>"Hành Trình Của La'Vietaly Bắt Đầu Không Phải Từ Một Xưởng Sản Xuất Hiện Đại, Mà Từ Tình Yêu Thuần Khiết Dành Cho Những Hạt Ca Cao Nảy Mầm Trên Mảnh Đất Quê Hương.</p>
+                    <p>Có Người Từng Hỏi Tôi: "Tại Sao Lại Chọn Con Đường Thủ Công Đầy Nhọc Nhằn Này?". Câu Trả Lời Nằm Ở Chính Giây Phút Chúng Tôi Tận Tay Chạm Vào Những Hạt Ca Cao Còn Thơm Mùi Nắng, Hay Khi Chứng Kiến Những Người Nông Dân Mỉm Cười Tự Hào Về Thành Quả Của Mình. Với Tôi, Socola Không Đơn Thuần Là Một Món Quà Bánh, Mà Là Một Ngôn Ngữ Của Cảm Xúc – Nơi Vị Đắng Nguyên Bản Hòa Quyện Cùng Sự Ngọt Ngào Tinh Tế Để Tạo Nên Một Bản Giao Hưởng Của Vị Giác.</p>
+                    <p>Chúng Tôi Kiên Định Với Triết Lý: Tử Tế Từ Gốc Rễ. Đó Là Sự Tử Tế Với Đất Đai Thông Qua Canh Tác Bền Vững, Sự Công Bằng Với Những Người Cộng Sự Nơi Nông Trường, Và Trên Hết Là Sự Trung Thực Với Sức Khỏe Của Bạn. Mỗi Thanh Socola Được Ra Đời Là Một Lời Cam Kết Về Chất Lượng Không Thỏa Hiệp, Giữ Trọn Vẹn Tinh Túy Thiên Nhiên Mà Không Cần Đến Những Phụ Gia Công Nghiệp.</p>
+                    <p>Cảm Ơn Bạn Đã Không Chỉ Thưởng Thức Một Món Ăn, Mà Còn Lắng Nghe Câu Chuyện Của Chúng Tôi. Hy Vọng Rằng, Qua Từng Lớp Hương Vị Đậm Đà Này, Bạn Sẽ Cảm Nhận Được Sự Ấm Áp, Niềm Đam Mê Và Khát Khao Nâng Tầm Giá Trị Bản Địa Mà Chúng Tôi Đã Gói Trọn Trong Đó."</p>
+                </div>
+                
+                <div class="founder-bottom">
+                    <span class="founder-company">La'Vietaly</span>
+                    <div class="founder-avatar">
+                        <img src="{{ asset('images/ceo.png') }}" alt="CEO Founder">
+                    </div>
+                    <span class="founder-role">CEO, Founder</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     @section('page_js')
         @vite(['resources/js/about.js'])
     @endsection
