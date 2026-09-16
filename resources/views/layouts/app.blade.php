@@ -209,36 +209,7 @@
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const menuToggle = document.getElementById('mobile-menu-toggle');
-            const menuClose = document.getElementById('mobile-menu-close-btn');
-            const navMenu = document.getElementById('nav-menu');
-            const overlay = document.getElementById('mobile-menu-overlay');
-
-            function toggleMenu() {
-                navMenu.classList.toggle('active');
-                overlay.classList.toggle('active');
-                document.body.classList.toggle('no-scroll');
-            }
-
-            if (menuToggle && menuClose && navMenu && overlay) {
-                menuToggle.addEventListener('click', toggleMenu);
-                menuClose.addEventListener('click', toggleMenu);
-                overlay.addEventListener('click', toggleMenu);
-            }
-
-            // Handle mobile mega menu click
-            const navItems = document.querySelectorAll('.nav-item');
-            navItems.forEach(item => {
-                item.addEventListener('click', function(e) {
-                    if (window.innerWidth <= 1024) {
-                        this.classList.toggle('open');
-                    }
-                });
-            });
-        });
-    </script>
+    @yield('page_js')
 </body>
 
 </html>

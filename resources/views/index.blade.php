@@ -443,4 +443,7 @@
         </div>
     </section>
 
+    @section('page_js')
+        @vite(['resources/js/home.js'])
+    @endsection
 @endsection
