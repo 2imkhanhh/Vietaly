@@ -251,19 +251,25 @@
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
     }
-    
+
     .values-nav::-webkit-scrollbar {
         display: none;
     }
 
     .values-nav-item {
         flex: 0 0 250px;
-        padding-left: 0; /* Remove left padding on mobile */
+        padding-left: 0;
         scroll-snap-align: center;
     }
 
     .values-nav-item::before {
-        display: none; /* Hide the vertical line on mobile */
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .values-section {
+        padding: 60px 0 20px 0;
     }
 }
 
@@ -275,13 +281,19 @@
     padding: 0 0 100px 0;
 }
 
+@media (max-width: 768px) {
+    .founder-section {
+        padding: 0 0 60px 0;
+    }
+}
+
 .founder-stamp {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
     background-image: url('../../public/images/background2.svg');
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 120px 40px;
@@ -341,12 +353,18 @@
 
 @media (max-width: 768px) {
     .founder-section {
-        padding: 80px 20px;
+        padding: 0 0 60px 0;
+        /* Remove top padding, keep bottom spacing */
+    }
+
+    .founder-stamp {
+        padding: 40px 15px;
+        /* Reduce internal padding to shrink height and teeth size */
     }
 
     .founder-bottom {
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
     }
 }
 
