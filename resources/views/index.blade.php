@@ -1,6 +1,10 @@
 @extends('layouts.app')
 @section('title', 'Vietaly - Home')
 
+@section('page_css')
+    @vite(['resources/css/home.css'])
+@endsection
+
 @section('content')
     <!-- Hero Banner -->
     <div class="hero-banner">

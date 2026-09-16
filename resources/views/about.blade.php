@@ -1,6 +1,10 @@
 @extends('layouts.app')
 @section('title', 'Vietaly - Giới thiệu')
 
+@section('page_css')
+    @vite(['resources/css/about.css'])
+@endsection
+
 @section('content')
     <section class="about-section">
         <div class="custom-container about-container">
