@@ -10,9 +10,11 @@ export default defineConfig({
                 'resources/css/home.css',
                 'resources/css/about.css',
                 'resources/css/products.css',
+                'resources/css/product-detail.css',
                 'resources/js/app.js',
                 'resources/js/home.js',
-                'resources/js/about.js'
+                'resources/js/about.js',
+                'resources/js/product-detail.js'
             ],
             refresh: true,
         }),

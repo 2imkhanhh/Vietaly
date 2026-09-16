@@ -306,7 +306,7 @@
 
 .product-info h3 {
     font-family: var(--font-mona-sans);
-    font-size: var(--fs-sm);
+    font-size: var(--fs-base);
     font-weight: 700;
     color: var(--color-header-text);
     margin: 0;
@@ -316,7 +316,7 @@
     font-family: var(--font-mona-sans);
     font-size: var(--fs-sm);
     font-weight: 600;
-    color: #D3A86B;
+    color: var(--color-header-text);
     margin: 0;
 }
 
@@ -1122,12 +1122,13 @@
 }
 
 @media (max-width: 992px) {
+
     /* Review Section */
     .review-bottom-bg {
         height: 60px;
         overflow: hidden;
     }
-    
+
     .review-bottom-bg img {
         height: 150px;
     }
@@ -1155,12 +1156,12 @@
         line-height: 1.5;
         margin-bottom: 15px;
     }
-    
+
     .review-subtitle {
         margin-bottom: 20px;
         padding-bottom: 15px;
     }
-    
+
     .review-author {
         margin-bottom: 25px;
     }
@@ -1173,6 +1174,7 @@
 }
 
 @media (max-width: 768px) {
+
     /* Product Showcase & Category */
     .product-showcase,
     .category-section,

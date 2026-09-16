@@ -11,7 +11,7 @@ if (navMenu && magicLine && navItems.length > 0) {
     if (currentPath !== '/') {
         navItems.forEach(item => {
             const itemPath = item.getAttribute('href') || item.getAttribute('data-path');
-            if (itemPath === currentPath) {
+            if (itemPath === currentPath || (itemPath === '/san-pham' && currentPath.startsWith('/chi-tiet-san-pham'))) {
                 activeItem = item;
                 item.classList.add('active-nav');
             }
@@ -110,3 +110,20 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+    // Make product cards clickable
+    const productCards = document.querySelectorAll('.product-card');
+    productCards.forEach(card => {
+        card.addEventListener('click', (e) => {
+            // Check if they clicked the Add to Cart button
+            const addBtn = e.target.closest('.btn-add');
+            if (addBtn) {
+                // Do not navigate if Add to Cart is clicked
+                return;
+            }
+            
+            // Navigate to product detail page
+            window.location.href = '/chi-tiet-san-pham';
+        });
+    });
