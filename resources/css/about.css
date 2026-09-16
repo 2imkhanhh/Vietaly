@@ -258,7 +258,6 @@
     width: 100%;
     background-color: var(--color-header-bg);
     padding: 0 0 100px 0;
-    /* No margin, matches section above */
 }
 
 .founder-stamp {
@@ -333,5 +332,115 @@
     .founder-bottom {
         flex-direction: column;
         gap: 20px;
+    }
+}
+
+/* Difference Section */
+.difference-section {
+    padding: 20px 0 100px 0;
+    background-color: var(--color-header-bg);
+}
+
+.difference-title {
+    font-family: 'Calistoga', serif;
+    font-size: clamp(32px, 4vw, 40px);
+    font-weight: 400;
+    color: var(--color-header-text);
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.difference-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.diff-col {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.cacao-img {
+    max-width: 400px;
+    height: auto;
+    width: 100%;
+}
+
+.diff-circle {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Calistoga', serif;
+    font-size: var(--fs-base);
+    font-weight: 400;
+    line-height: 1.4;
+    transition: transform 0.3s ease;
+}
+
+.diff-circle:hover {
+    transform: translateY(-5px);
+}
+
+.circle-1 {
+    background-color: #DBA76033;
+    color: #DBA760;
+}
+
+.circle-2 {
+    background-color: #DBA760;
+    color: #FCF7E0;
+}
+
+.circle-3 {
+    background-color: #0C402D;
+    color: #FCF7E0;
+}
+
+.circle-4 {
+    background-color: #9B6825;
+    color: #FCF7E0;
+}
+
+@media (max-width: 1024px) {
+    .difference-content {
+        gap: 40px;
+    }
+
+    .cacao-img {
+        max-width: 300px;
+    }
+
+    .diff-circle {
+        width: 140px;
+        height: 140px;
+        font-size: var(--fs-sm);
+    }
+}
+
+@media (max-width: 768px) {
+    .difference-content {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .diff-col {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .center-col {
+        order: -1;
     }
 }
