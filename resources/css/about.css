@@ -244,11 +244,26 @@
         overflow-x: auto;
         padding-bottom: 20px;
         gap: 20px;
+        /* Hide scrollbar */
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        /* Scroll snap */
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+    }
+    
+    .values-nav::-webkit-scrollbar {
+        display: none;
     }
 
     .values-nav-item {
         flex: 0 0 250px;
-        padding-left: 15px;
+        padding-left: 0; /* Remove left padding on mobile */
+        scroll-snap-align: center;
+    }
+
+    .values-nav-item::before {
+        display: none; /* Hide the vertical line on mobile */
     }
 }
 

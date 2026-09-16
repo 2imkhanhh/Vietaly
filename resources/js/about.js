@@ -27,6 +27,16 @@ document.addEventListener('DOMContentLoaded', function() {
                         section.classList.remove('active');
                     });
                     entry.target.classList.add('active');
+                    
+                    // Sync horizontal nav scrolling on mobile
+                    if (window.innerWidth <= 768 && activeNav) {
+                        const navContainer = document.querySelector('.values-nav');
+                        if (navContainer) {
+                            const scrollLeft = activeNav.offsetLeft - (navContainer.clientWidth / 2) + (activeNav.clientWidth / 2);
+                            // Avoid setting active class again to prevent loop, just scroll
+                            navContainer.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+                        }
+                    }
                 }
             });
         }, observerOptions);
@@ -34,6 +44,36 @@ document.addEventListener('DOMContentLoaded', function() {
         sections.forEach(section => {
             observer.observe(section);
         });
+
+        // Handle horizontal swiping on mobile to highlight items
+        const navContainer = document.querySelector('.values-nav');
+        if (navContainer) {
+            let scrollTimeout;
+            navContainer.addEventListener('scroll', () => {
+                if (window.innerWidth <= 768) {
+                    clearTimeout(scrollTimeout);
+                    scrollTimeout = setTimeout(() => {
+                        let closestItem = null;
+                        let minDistance = Infinity;
+                        const containerCenter = navContainer.scrollLeft + navContainer.clientWidth / 2;
+                        
+                        navItems.forEach(item => {
+                            const itemCenter = item.offsetLeft + item.clientWidth / 2;
+                            const distance = Math.abs(itemCenter - containerCenter);
+                            if (distance < minDistance) {
+                                minDistance = distance;
+                                closestItem = item;
+                            }
+                        });
+                        
+                        if (closestItem && !closestItem.classList.contains('active')) {
+                            navItems.forEach(item => item.classList.remove('active'));
+                            closestItem.classList.add('active');
+                        }
+                    }, 50); // Debounce to avoid excessive updates
+                }
+            });
+        }
 
         navItems.forEach(item => {
             item.addEventListener('click', function() {
