@@ -9,6 +9,7 @@ export default defineConfig({
                 'resources/css/app.css',
                 'resources/css/home.css',
                 'resources/css/about.css',
+                'resources/css/products.css',
                 'resources/js/app.js',
                 'resources/js/home.js',
                 'resources/js/about.js'

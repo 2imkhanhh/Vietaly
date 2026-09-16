@@ -194,6 +194,7 @@
     align-items: center;
     aspect-ratio: 1 / 1;
     padding: 35px;
+    overflow: hidden;
 }
 
 .main-img {
@@ -211,8 +212,6 @@
     position: absolute;
     inset: 0;
     pointer-events: none;
-    opacity: 0;
-    transition: opacity 0.3s ease;
 }
 
 .product-card:hover .product-hover-elements,
@@ -232,6 +231,13 @@
     overflow: hidden;
     pointer-events: auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product-card:hover .reviewer-avatar,
+.product-card.active .reviewer-avatar {
+    opacity: 1;
 }
 
 .reviewer-avatar img {
@@ -242,14 +248,21 @@
 
 .product-actions {
     position: absolute;
-    bottom: 15px;
+    bottom: 0;
     left: 0;
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 10px;
     pointer-events: auto;
-    padding: 0 10px;
+    padding: 0 10px 15px;
+    transform: translateY(110%);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-actions,
+.product-card.active .product-actions {
+    transform: translateY(0);
 }
 
 .btn-add {

@@ -9,3 +9,7 @@ Route::get('/', function () {
 Route::get('/gioi-thieu', function () {
     return view('about');
 });
+
+Route::get('/san-pham', function () {
+    return view('products');
+});

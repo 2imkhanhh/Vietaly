@@ -45,8 +45,8 @@
                         </button>
                     </div>
                     <a href="/gioi-thieu">Giới thiệu</a>
-                    <div class="nav-item">
-                        <span>Sản phẩm</span>
+                    <div class="nav-item" data-path="/san-pham">
+                        <span style="cursor: pointer;" onclick="window.location.href='/san-pham'">Sản phẩm</span>
                         <span class="material-symbols-outlined">keyboard_arrow_down</span>
                         <div class="mega-menu">
                             <div class="mega-menu-inner">

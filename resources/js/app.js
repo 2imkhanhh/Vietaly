@@ -10,7 +10,8 @@ if (navMenu && magicLine && navItems.length > 0) {
     
     if (currentPath !== '/') {
         navItems.forEach(item => {
-            if (item.tagName.toLowerCase() === 'a' && item.getAttribute('href') === currentPath) {
+            const itemPath = item.getAttribute('href') || item.getAttribute('data-path');
+            if (itemPath === currentPath) {
                 activeItem = item;
                 item.classList.add('active-nav');
             }
