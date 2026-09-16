@@ -492,7 +492,7 @@ body {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 3fr 1fr 1fr 1fr auto;
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -541,7 +541,7 @@ body {
 .footer-col-badges {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     gap: 15px;
 }
 

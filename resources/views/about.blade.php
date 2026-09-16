@@ -22,11 +22,23 @@
             </p>
         </div>
 
-        <div class="about-gallery">
-            <div class="about-img-wrap"><img src="{{ asset('images/intro1.jpg') }}" alt="Intro 1"></div>
-            <div class="about-img-wrap"><img src="{{ asset('images/intro2.jpg') }}" alt="Intro 2"></div>
-            <div class="about-img-wrap"><img src="{{ asset('images/intro3.png') }}" alt="Intro 3"></div>
-            <div class="about-img-wrap"><img src="{{ asset('images/intro4.jpg') }}" alt="Intro 4"></div>
+        <div class="about-gallery-wrapper">
+            <div class="about-gallery-track">
+                <div class="about-img-wrap"><img src="{{ asset('images/intro1.jpg') }}" alt="Intro 1"></div>
+                <div class="about-img-wrap"><img src="{{ asset('images/intro2.jpg') }}" alt="Intro 2"></div>
+                <div class="about-img-wrap"><img src="{{ asset('images/intro3.png') }}" alt="Intro 3"></div>
+                <div class="about-img-wrap"><img src="{{ asset('images/intro4.jpg') }}" alt="Intro 4"></div>
+                <div class="about-img-wrap"><img src="{{ asset('images/weare.jpg') }}" alt="Intro 5"></div>
+                <div class="about-img-wrap"><img src="{{ asset('images/footer1.jpg') }}" alt="Intro 6"></div>
+            </div>
+            <div class="about-gallery-track">
+                <div class="about-img-wrap"><img src="{{ asset('images/intro1.jpg') }}" alt="Intro 1"></div>
+                <div class="about-img-wrap"><img src="{{ asset('images/intro2.jpg') }}" alt="Intro 2"></div>
+                <div class="about-img-wrap"><img src="{{ asset('images/intro3.png') }}" alt="Intro 3"></div>
+                <div class="about-img-wrap"><img src="{{ asset('images/intro4.jpg') }}" alt="Intro 4"></div>
+                <div class="about-img-wrap"><img src="{{ asset('images/weare.jpg') }}" alt="Intro 5"></div>
+                <div class="about-img-wrap"><img src="{{ asset('images/footer1.jpg') }}" alt="Intro 6"></div>
+            </div>
         </div>
     </section>
 
