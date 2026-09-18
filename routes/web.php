@@ -21,3 +21,7 @@ Route::get('/chi-tiet-san-pham', function () {
 Route::get('/gio-hang', function () {
     return view('cart');
 });
+
+Route::get('/thanh-toan', function () {
+    return view('checkout');
+});

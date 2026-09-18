@@ -35,7 +35,6 @@
                 <button class="tab-btn">Set quà tặng</button>
             </div>
 
-            <!-- Carousel Area -->
             <div class="showcase-carousel-wrapper">
                 <button class="carousel-nav-btn showcase-prev">
                     <span class="material-symbols-outlined" style="transform: scaleX(-1);">arrow_right_alt</span>
@@ -332,7 +331,6 @@
 
             <div class="review-track-container">
                 <div class="review-track">
-                    <!-- Review 1 -->
                     <div class="review-card">
                         <div class="review-card-left">
                             <span class="review-subtitle">KHÁCH HÀNG NÓI GÌ VỀ CHÚNG TÔI</span>
@@ -344,8 +342,7 @@
                             <span class="review-author">Sarah L.</span>
 
                             <div class="review-product">
-                                <img src="{{ asset('images/product1.png') }}" alt="Product"
-                                    class="review-product-img">
+                                <img src="{{ asset('images/product1.png') }}" alt="Product" class="review-product-img">
                                 <div class="review-product-info">
                                     <span class="review-product-title">Socola Đen Nguyên Bản 72%</span>
                                     <span class="review-product-price">890.000 VND</span>
@@ -357,7 +354,6 @@
                         </div>
                     </div>
 
-                    <!-- Review 2 -->
                     <div class="review-card">
                         <div class="review-card-left">
                             <span class="review-subtitle">KHÁCH HÀNG NÓI GÌ VỀ CHÚNG TÔI</span>
@@ -367,8 +363,7 @@
                             <span class="review-author">Tony T.</span>
 
                             <div class="review-product">
-                                <img src="{{ asset('images/product2.png') }}" alt="Product"
-                                    class="review-product-img">
+                                <img src="{{ asset('images/product2.png') }}" alt="Product" class="review-product-img">
                                 <div class="review-product-info">
                                     <span class="review-product-title">Socola Hạt Dẻ Cười 65%</span>
                                     <span class="review-product-price">950.000 VND</span>
@@ -438,12 +433,13 @@
             </div>
             <div class="instagram-text">
                 <h2>Theo Dõi Chúng Tôi<br>Trên Instagram</h2>
-                <a href="#" class="insta-link">@LA'VIETALY <span class="material-symbols-outlined">call_made</span></a>
+                <a href="#" class="insta-link">@LA'VIETALY <span
+                        class="material-symbols-outlined">call_made</span></a>
             </div>
         </div>
     </section>
 
-    @section('page_js')
-        @vite(['resources/js/home.js'])
-    @endsection
+@section('page_js')
+    @vite(['resources/js/home.js'])
+@endsection
 @endsection

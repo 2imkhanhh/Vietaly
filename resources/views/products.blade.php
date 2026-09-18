@@ -9,8 +9,6 @@
     <div class="products-page">
         <div class="custom-container">
             <h1 class="page-title">Tất cả sản phẩm</h1>
-
-            <!-- Toolbar -->
             <div class="products-toolbar">
                 <div class="toolbar-left">
                     <button class="filter-btn">
@@ -27,9 +25,7 @@
                 </div>
             </div>
 
-            <!-- Product Grid -->
             <div class="products-grid">
-                <!-- Product 1 -->
                 <div class="product-card">
                     <div class="product-image-wrapper">
                         <img src="{{ asset('images/category1.png') }}" alt="Socola Đen Nguyên Bản 72%" class="product-img">
@@ -47,7 +43,6 @@
                     </div>
                 </div>
 
-                <!-- Product 2 -->
                 <div class="product-card">
                     <div class="product-image-wrapper">
                         <img src="{{ asset('images/category2.png') }}" alt="Socola Đen Nguyên Bản 72%" class="product-img">
@@ -65,7 +60,6 @@
                     </div>
                 </div>
 
-                <!-- Product 3 -->
                 <div class="product-card">
                     <div class="product-image-wrapper">
                         <img src="{{ asset('images/category3.png') }}" alt="Socola Đen Nguyên Bản 72%" class="product-img">
@@ -83,7 +77,6 @@
                     </div>
                 </div>
 
-                <!-- Product 4 (No avatar) -->
                 <div class="product-card">
                     <div class="product-image-wrapper">
                         <img src="{{ asset('images/product4.png') }}" alt="Socola Caramel Muối Biển" class="product-img">
@@ -101,7 +94,6 @@
                     </div>
                 </div>
 
-                <!-- Product 5 -->
                 <div class="product-card">
                     <div class="product-image-wrapper">
                         <img src="{{ asset('images/product1.png') }}" alt="Socola Đen Nguyên Bản 72%" class="product-img">
@@ -119,7 +111,6 @@
                     </div>
                 </div>
 
-                <!-- Product 6 -->
                 <div class="product-card">
                     <div class="product-image-wrapper">
                         <img src="{{ asset('images/product2.png') }}" alt="Socola Đen Nguyên Bản 72%" class="product-img">
@@ -137,7 +128,6 @@
                     </div>
                 </div>
 
-                <!-- Product 7 -->
                 <div class="product-card">
                     <div class="product-image-wrapper">
                         <img src="{{ asset('images/product3.png') }}" alt="Socola Đen Nguyên Bản 72%" class="product-img">
@@ -155,7 +145,6 @@
                     </div>
                 </div>
 
-                <!-- Product 8 -->
                 <div class="product-card">
                     <div class="product-image-wrapper">
                         <img src="{{ asset('images/product4.png') }}" alt="Socola Caramel Muối Biển" class="product-img">

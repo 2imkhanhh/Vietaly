@@ -12,6 +12,7 @@ export default defineConfig({
                 'resources/css/products.css',
                 'resources/css/product-detail.css',
                 'resources/css/cart.css',
+                'resources/css/checkout.css',
                 'resources/js/app.js',
                 'resources/js/home.js',
                 'resources/js/about.js',
