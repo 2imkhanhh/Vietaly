@@ -196,6 +196,12 @@
     font-weight: 500;
     cursor: pointer;
     height: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.coupon-btn:hover {
+    background-color: #DBA760;
+    color: #F5E7C6;
 }
 
 .checkout-btn {
@@ -225,13 +231,123 @@
     .ticket {
         width: 100%;
     }
+}
 
-    .cart-item {
-        flex-wrap: wrap;
+@media (max-width: 768px) {
+    .cart-page {
+        padding: 40px 0 80px;
     }
 
-    .cart-item-price,
-    .cart-item-quantity {
+    .cart-title {
+        margin-bottom: 30px;
+    }
+
+    .cart-item {
+        display: grid;
+        grid-template-columns: 80px 1fr auto;
+        grid-template-rows: auto auto;
+        gap: 10px 15px;
+        padding: 15px 0;
+    }
+
+    .cart-item-img {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+    }
+
+    .cart-item-info {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .cart-item-name {
+        font-size: var(--fs-sm);
+    }
+
+    .cart-item-remove {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        margin: 0;
+        justify-self: end;
+        align-self: start;
+    }
+
+    .cart-item-price {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        text-align: left;
         width: auto;
+    }
+
+    .cart-item-quantity {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+        width: 90px;
+        padding: 4px 10px;
+    }
+    
+    .coupon-box input {
+        font-size: 13px;
+    }
+
+    .coupon-btn {
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cart-item {
+        grid-template-columns: 70px 1fr;
+        grid-template-rows: auto auto auto;
+        position: relative;
+    }
+
+    .cart-item-img {
+        grid-column: 1 / 2;
+        grid-row: 1 / 4;
+        width: 70px;
+        height: 70px;
+    }
+
+    .cart-item-img img {
+        width: 50px;
+    }
+
+    .cart-item-info {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        padding-right: 25px;
+    }
+
+    .cart-item-remove {
+        position: absolute;
+        top: 15px;
+        right: 0;
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .cart-item-price {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .cart-item-quantity {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        justify-self: start;
+        margin-top: 5px;
+    }
+    
+    .ticket {
+        padding: 20px 15px;
+    }
+    
+    .coupon-icon {
+        display: none;
+    }
+    
+    .coupon-box {
+        padding-left: 15px;
     }
 }

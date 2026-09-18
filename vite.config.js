@@ -15,7 +15,8 @@ export default defineConfig({
                 'resources/js/app.js',
                 'resources/js/home.js',
                 'resources/js/about.js',
-                'resources/js/product-detail.js'
+                'resources/js/product-detail.js',
+                'resources/js/cart.js'
             ],
             refresh: true,
         }),

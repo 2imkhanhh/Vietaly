@@ -103,3 +103,7 @@
     </div>
 </div>
 @endsection
+
+@section('page_js')
+    @vite(['resources/js/cart.js'])
+@endsection
