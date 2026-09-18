@@ -25,3 +25,7 @@ Route::get('/gio-hang', function () {
 Route::get('/thanh-toan', function () {
     return view('checkout');
 });
+
+Route::get('/tuyen-dung', function () {
+    return view('recruitment');
+});

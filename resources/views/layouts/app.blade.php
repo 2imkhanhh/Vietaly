@@ -128,7 +128,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#">Tuyển dụng</a>
+                    <a href="/tuyen-dung">Tuyển dụng</a>
                     <a href="#">Cửa hàng</a>
                     <a href="#">Đặt lịch trải nghiệm</a>
                     <div class="magic-line"></div>
