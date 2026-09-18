@@ -29,3 +29,7 @@ Route::get('/thanh-toan', function () {
 Route::get('/tuyen-dung', function () {
     return view('recruitment');
 });
+
+Route::get('/cua-hang', function () {
+    return view('store');
+});

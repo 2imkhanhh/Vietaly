@@ -129,7 +129,7 @@
                         </div>
                     </div>
                     <a href="/tuyen-dung">Tuyển dụng</a>
-                    <a href="#">Cửa hàng</a>
+                    <a href="/cua-hang">Cửa hàng</a>
                     <a href="#">Đặt lịch trải nghiệm</a>
                     <div class="magic-line"></div>
                 </nav>
