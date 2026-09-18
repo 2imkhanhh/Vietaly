@@ -463,19 +463,95 @@
 
     .checkout-summary-section {
         width: 100%;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    .checkout-form-section {
+        width: 100%;
     }
 }
 
 @media (max-width: 768px) {
+    .checkout-page {
+        padding: 20px 0 60px;
+    }
+
     .form-row {
         flex-direction: column;
+    }
+    
+    .delivery-methods {
+        flex-direction: row;
+    }
+    
+    .delivery-option {
+        padding: 10px 5px;
+        gap: 5px;
     }
 
     .address-row {
         grid-template-columns: 1fr;
     }
-
-    .delivery-methods {
+    
+    .checkout-title-row {
         flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    
+    .checkout-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .checkout-summary-section {
+        max-width: 100%;
+    }
+    
+    .ticket-top {
+        padding: 20px 15px;
+        background-size: cover;
+    }
+    
+    .ticket-bottom {
+        padding: 20px 15px;
+        background-size: cover;
+    }
+    
+    .summary-item {
+        gap: 10px;
+    }
+    
+    .summary-item-img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .summary-item-img img {
+        width: 35px;
+    }
+    
+    .summary-item-name {
+        font-size: 12px;
+    }
+    
+    .new-price, .old-price {
+        font-size: 12px;
+    }
+    
+    .summary-item-qty {
+        gap: 5px;
+    }
+    
+    .summary-item-qty .qty-btn {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .checkout-footer-links {
+        flex-direction: column;
+        gap: 10px;
     }
 }
