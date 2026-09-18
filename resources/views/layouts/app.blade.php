@@ -154,7 +154,7 @@
                         <a href="#" class="icon-btn">
                             <span class="material-symbols-outlined">account_circle</span>
                         </a>
-                        <a href="#" class="icon-btn">
+                        <a href="/gio-hang" class="icon-btn">
                             <span class="material-symbols-outlined">local_mall</span>
                         </a>
                     </div>
