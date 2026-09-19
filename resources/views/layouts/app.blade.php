@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title', 'Vietaly')</title>
+    <link rel="icon" href="{{ asset('images/logotab.svg') }}">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +21,6 @@
 
 <body>
     <header class="header-wrapper">
-        <!-- TOP BAR -->
         <div class="top-bar">
             <div class="custom-container">
                 <div class="hotline">HOTLINE: 0971773868</div>
@@ -31,7 +31,6 @@
             </div>
         </div>
 
-        <!-- MAIN HEADER -->
         <div class="main-header">
             <div class="custom-container main-header-container">
                 <button id="mobile-menu-toggle" class="mobile-menu-btn">
@@ -134,7 +133,6 @@
                     <div class="magic-line"></div>
                 </nav>
 
-                <!-- Center Logo -->
                 <div class="logo-wrapper">
                     <div class="logo-container">
                         <a href="/" style="text-decoration: none;">
@@ -143,7 +141,6 @@
                     </div>
                 </div>
 
-                <!-- Right Actions -->
                 <div class="header-actions">
                     <div class="search-box">
                         <input type="text" placeholder="Tìm kiếm">
@@ -167,14 +164,14 @@
         @yield('content')
     </main>
 
-    <!-- Footer Section -->
     <footer class="footer-section">
         <div class="custom-container">
             <img src="{{ asset('images/logo footer.svg') }}" alt="LA' VIETALY Logo" class="footer-huge-logo">
             <div class="footer-grid">
                 <div class="footer-col footer-col-brand">
                     <h3>LA'VIETALY</h3>
-                    <p>Địa chỉ: P.903, Tầng 9, Tòa nhà Diamond Plaza, 34 Lê Duẩn, Phường Sài Gòn, Thành phố Hồ Chí Minh, Việt Nam</p>
+                    <p>Địa chỉ: P.903, Tầng 9, Tòa nhà Diamond Plaza, 34 Lê Duẩn, Phường Sài Gòn, Thành phố Hồ Chí Minh,
+                        Việt Nam</p>
                     <p>Email: anh.le@lavietaly.com<br>Số điện thoại: 0971773868</p>
                 </div>
                 <div class="footer-col">
