@@ -24,9 +24,12 @@
         <div class="top-bar">
             <div class="custom-container">
                 <div class="hotline">HOTLINE: 0971773868</div>
-                <div class="language-selector">
-                    <span class="lang-text">EN - US</span>
+                <div class="language-selector" id="language-selector">
+                    <span class="lang-text" id="current-lang">VI</span>
                     <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                    <div class="lang-dropdown">
+                        <div class="lang-option" data-value="en">EN</div>
+                    </div>
                 </div>
             </div>
         </div>

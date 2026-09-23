@@ -81,6 +81,7 @@ body {
     align-items: center;
     gap: 4px;
     cursor: pointer;
+    position: relative;
 }
 
 .top-bar .language-selector .lang-text {
@@ -94,6 +95,48 @@ body {
 .top-bar .language-selector .material-symbols-outlined {
     color: var(--color-topbar-text);
     font-size: var(--fs-lg);
+    transition: transform 0.3s ease;
+}
+
+.top-bar .language-selector.active .material-symbols-outlined {
+    transform: rotate(180deg);
+}
+
+.lang-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 5px;
+    background: var(--color-header-bg);
+    border: 1px solid rgba(219, 167, 96, 0.5);
+    border-radius: 4px;
+    min-width: 60px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.language-selector.active .lang-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.lang-option {
+    font-family: var(--font-mona-sans);
+    font-weight: 500;
+    font-size: var(--fs-base);
+    color: var(--color-header-text);
+    padding: 8px 12px;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.lang-option:hover {
+    background: #f0deae;
 }
 
 .main-header {
@@ -281,7 +324,6 @@ body {
     font-size: var(--fs-lg);
 }
 
-/* MEGA MENU */
 .mega-menu {
     position: absolute;
     top: 100%;
@@ -475,7 +517,6 @@ body {
     margin: 0;
 }
 
-/* Footer Section */
 .footer-section {
     background-color: var(--color-header-bg);
     border-top: 1px solid rgba(194, 137, 59, 0.15);
@@ -573,7 +614,6 @@ body {
     }
 }
 
-/* Responsive Overrides */
 @media (max-width: 1024px) {
     .footer-grid {
         grid-template-columns: 1fr 1fr;
@@ -657,13 +697,12 @@ body {
     .nav-menu .nav-item {
         font-size: var(--fs-base);
         padding: 10px 0;
-        width: max-content; /* Make underline fit text */
+        width: max-content;
         position: relative;
     }
 
-    /* CSS underline for mobile */
-    .nav-menu > a::after,
-    .nav-menu > .nav-item::after {
+    .nav-menu>a::after,
+    .nav-menu>.nav-item::after {
         content: '';
         position: absolute;
         bottom: 0px;
@@ -676,8 +715,8 @@ body {
         transition: transform 0.3s ease;
     }
 
-    .nav-menu > a.active-nav::after,
-    .nav-menu > .nav-item.open::after {
+    .nav-menu>a.active-nav::after,
+    .nav-menu>.nav-item.open::after {
         transform: scaleX(1);
     }
 

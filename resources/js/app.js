@@ -111,7 +111,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
     // Make product cards clickable
     const productCards = document.querySelectorAll('.product-card');
     productCards.forEach(card => {
@@ -127,3 +126,36 @@ document.addEventListener('DOMContentLoaded', function() {
             window.location.href = '/chi-tiet-san-pham';
         });
     });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Language selector logic
+    const langSelector = document.getElementById('language-selector');
+    const currentLang = document.getElementById('current-lang');
+    const langOptions = document.querySelectorAll('.lang-option');
+
+    if (langSelector) {
+        langSelector.addEventListener('click', (e) => {
+            langSelector.classList.toggle('active');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!langSelector.contains(e.target)) {
+                langSelector.classList.remove('active');
+            }
+        });
+
+        langOptions.forEach(option => {
+            option.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const newLang = option.getAttribute('data-value').toUpperCase();
+                const oldLang = currentLang.textContent;
+                
+                currentLang.textContent = newLang;
+                option.textContent = oldLang;
+                option.setAttribute('data-value', oldLang.toLowerCase());
+                
+                langSelector.classList.remove('active');
+            });
+        });
+    }
+});
